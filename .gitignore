@@ -99,7 +99,6 @@ local.properties
 
 ### NetBeans
 nbproject/private/
-nbproject/
 build/
 nbbuild/
 dist/
