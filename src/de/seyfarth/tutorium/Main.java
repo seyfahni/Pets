@@ -1,19 +1,13 @@
 package de.seyfarth.tutorium;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        Cat kitty = new Cat("Kitty");
-        Cat nyan = new Cat("Nyan");
-        Dog hasso = new Dog("Hasso");
-        kitty.demandFood();
-        kitty.eat();
-        kitty.roam();
-        nyan.scratch();
-        nyan.purr();
-        nyan.sleep();
-        hasso.begForFood();
-        hasso.takeMeForAWalk();
-        hasso.bite();
+        try (Scanner commandLine = new Scanner(System.in)) {
+            String input = commandLine.nextLine();
+            System.out.println("Input: " + input);
+        }
     }
 }
