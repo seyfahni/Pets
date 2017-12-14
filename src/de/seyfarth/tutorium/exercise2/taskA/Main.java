@@ -36,7 +36,7 @@ public final class Main {
 
 	public static int[] numberSequence(int start, int end) {
 		int[] sequence = new int[(end + 1) / 2 - start / 2];
-		int odd = start + 1 - start % 2;
+		int odd = start | 1;
 		for (int index = 0; index < sequence.length; index++) {
 			sequence[index] = odd;
 			odd += 2;
