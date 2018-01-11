@@ -1,5 +1,7 @@
 package de.seyfarth.tutorium.tasks;
 
+import de.seyfarth.tutorium.debugging.ChainPart;
+
 public class ForEachTest {
 	public static void main(String[] args) {
 		String[] strings = {"1" , "2", "3", "4"};

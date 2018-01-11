@@ -1,4 +1,4 @@
-package de.seyfarth.tutorium.tasks;
+package de.seyfarth.tutorium.debugging;
 
 public class ChainPart {
 

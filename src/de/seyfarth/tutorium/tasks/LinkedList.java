@@ -1,5 +1,7 @@
 package de.seyfarth.tutorium.tasks;
 
+import de.seyfarth.tutorium.debugging.ChainPart;
+
 public class LinkedList {
    
     private ChainPart first;
