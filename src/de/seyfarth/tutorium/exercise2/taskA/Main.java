@@ -10,12 +10,16 @@ public final class Main {
 	}
 
 	public static String formatIntArray(int[] array) {
+		String[] output = intArrayToStringArray(array);
+		return String.join(" ", output);
+	}
+
+	private static String[] intArrayToStringArray(int[] array) {
 		String[] output = new String[array.length];
 		for (int i = 0; i < array.length; i++) {
 			output[i] = String.valueOf(array[i]);
-
 		}
-		return String.join(" ", output);
+		return output;
 	}
 
 	public static int product(int minimum, int maximum) {
