@@ -1,23 +1,23 @@
 package de.seyfarth.tutorium.debugging;
 
-public class ChainPart {
+public class ChainPart<E> {
 
-	private final Object content;
-	private ChainPart next;
+	private final E content;
+	private ChainPart<E> next;
 	
-	public ChainPart(Object content) {
+	public ChainPart(E content) {
 		this.content = content;
 	}
 
-	public Object getContent() {
+	public E getContent() {
 		return this.content;
 	}
 	
-	public ChainPart getNext() {
+	public ChainPart<E> getNext() {
 		return this.next;
 	}
 	
-	public void setNext(ChainPart next) {
+	public void setNext(ChainPart<E> next) {
 		this.next = next;
 	}
 }
