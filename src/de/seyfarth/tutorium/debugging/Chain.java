@@ -1,12 +1,31 @@
 package de.seyfarth.tutorium.debugging;
 
+/**
+ * This is an single linked list.
+ * 
+ * @see ChainPart
+ * @see java.util.LinkedList
+ * @param <E> The Type this list contains
+ */
 public class Chain<E> {
 
+    /**
+     * 
+     */
     private ChainPart<E> first;
 
+    /**
+     * 
+     */
     public Chain() {
     }
 
+    /**
+     * This method enables the user to retrieve this lists size. It should never
+     * throws {@link NullPointerException} or any other exception.
+     * 
+     * @return the size of the list
+     */
     public int size() {
         ChainPart<E> current = this.first;
         int size = 0;
@@ -17,6 +36,12 @@ public class Chain<E> {
         return size;
     }
 
+    /**
+     * Checks if the list is empty. Equals {@link #size()} == 0.
+     * {@link java.util.LinkedList#size()}
+     * 
+     * @return true if empty
+     */
     public boolean isEmpty() {
         return this.first == null;
     }
@@ -56,10 +81,21 @@ public class Chain<E> {
         return false;
     }
 
+    /**
+     *
+     * @deprecated shuld not be used
+     */
+    @Deprecated
     public void clear() {
         first = null;
     }
 
+    /**
+     *
+     * @param index
+     * @throws IndexOutOfBoundsException if index smaller than 0 or geater equals size()
+     * @return 
+     */
     public E get(int index) {
         if (index < 0 || index >= size()) {
             throw new IndexOutOfBoundsException(String.valueOf(index));
